@@ -10,7 +10,7 @@ def fetch_poster(movie_id, title, year=None):
     """
     try:
         # First try: Exact match using IMDb ID
-        url = f"http://www.omdbapi.com/?i={movie_id}&apikey="KEY" "
+        url = f"http://www.omdbapi.com/?i={movie_id}&apikey=50ed6399 "
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         data = response.json()
